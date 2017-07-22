@@ -1,0 +1,195 @@
+html {
+	display: block;
+	height: 100%;
+}
+
+body {
+	background-color: #38393B;
+	color: #ffffff;
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	height: 100%;
+	margin:0;
+	padding: 0;
+}
+
+ul, 
+li {
+	list-style: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+}	
+
+a, 
+a:hover, 
+a:link, 
+a:visited, 
+a:focus {
+	color: #ffffff;
+	letter-spacing: 3px;
+	text-decoration: none;	
+}
+
+/**/
+
+body.intro {
+	position: relative;
+}
+
+.logo-intro {
+	position: absolute;
+	margin-top: -101px;
+	margin-left: -154px;
+	left: 50%;
+	top: 45%;
+}
+
+		.logo-intro img {
+			width: 100%;
+		}
+
+.redes{
+	position: absolute;
+    bottom: 17%;
+    left: 5%;
+}
+
+	.redes li{
+		display: inline-block;
+		margin-right: 35px;
+	}
+
+.datos-email{
+	position: absolute;
+    bottom: 8%;
+    left: 5%;
+}
+
+	.datos-email li{
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.5px;
+		font-weight: 300;
+	}
+
+	#facebook-logo path, #twitter-logo path, #instagram-logo path {
+		-webkit-transition: all 500ms ease;
+    	transition: all 500ms ease;
+    }
+
+    #facebook-logo:hover path, #twitter-logo:hover path, #instagram-logo:hover path {
+        fill: rgb(62,204,240) !important;
+    }
+
+
+/*--------------------------------------------------------------
+## grafiquitos
+--------------------------------------------------------------*/
+.graf-plus, .graf-cruz, .graf-igual, .graf-menos, .graf-menos-2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.graf-plus span, .graf-cruz span, .graf-igual span, .graf-menos span, .graf-menos-2 span{
+    display: block;
+    background-color: #3ECCF0;
+    width: 16px;
+    height: 1px;
+}
+
+/*Plus*/
+    .graf-plus span.s-2{
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        margin-top: -1px
+    }
+/*Cruz*/
+    .graf-cruz span.s-2{
+        -moz-transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg);
+        margin-top: -1px
+    }    
+    .graf-cruz{
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);            
+    }
+/*Igual*/
+    .graf-igual span.s-2{
+        margin-top: 4px;
+    }
+/*Menos 2*/
+    .graf-menos-2{
+        -moz-transform: rotate(-33deg);
+        -webkit-transform: rotate(-33deg);
+        -o-transform: rotate(-33deg);
+        transform: rotate(-33deg); 
+    }
+
+/*Ubicando iconitos*/
+    .graf-plus.i-1{ top:50%; left: 5%; }
+    .graf-plus.i-2{ bottom:15%; right: 8%; }
+
+    .graf-cruz.i-1{ top: 15%;  left: 12%; }
+    .graf-cruz.i-2{ bottom: 10%;  left: 60%; }
+    
+    .graf-igual.i-1{ top:20%; left: 60%; }
+    .graf-igual.i-2{ top:45%; right: 20%; }
+
+    .graf-menos.i-1{ bottom:30%; left: 30%; }
+    .graf-menos.i-2{ top:10%; right: 9%; }
+    
+    .graf-menos-2.i-1{ top:11%; left: 40%; }
+
+@media screen and (max-width: 500px) {
+	
+	.logo-intro img {
+		width: 250px;
+	}
+	.logo-intro {
+	    margin-top: -122px;
+	    margin-left: -125px;
+	}
+	.graf-igual.i-2 { display: none; }
+	.graf-cruz.i-2 { display: none; }
+	.graf-igual.i-1 { display: none; }
+
+}
+
+@media screen and (max-width: 400px) {
+	
+	.logo-intro img {
+		width: 200px;
+	}
+	.logo-intro {
+	    margin-top: -100px;
+	    margin-left: -98px;
+	}
+	.iconitos { display: none; }
+
+	.datos-email {
+	    bottom: 6%;
+	    left: 10%;
+	}
+	.datos-email li {
+    	font-size: 14px;
+    	line-height: 20px;
+	}
+
+	.redes {
+	    bottom: 18%;
+	    left: 10%;
+	}
+	.redes li {
+	    margin-right: 20px;
+	}
+
+}
